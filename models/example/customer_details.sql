@@ -9,7 +9,7 @@ SELECT
   orderid,
   paymentmethod,
   amount,
-  current_timestamp() AS created
+  current_timestamp() AS create_ts
 FROM
   `dbt-tutorial.jaffle_shop.customers` a
 LEFT JOIN

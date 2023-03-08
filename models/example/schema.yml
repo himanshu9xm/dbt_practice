@@ -23,3 +23,42 @@ models:
             tests:
                 - unique
                 - not_null
+          
+    - name: customer_details
+      description: "Table with details for all the customers"
+      columns:
+          - name: id
+            description: "The primary key for this table"
+            tests:
+                - unique
+                - not_null
+          - name: first_name
+            description: "The first name of the customer"
+
+          - name: last_name
+            description: "The last name of the customer"
+
+          - name: user_id
+            description: "User id unique to each user"
+          
+          - name: order_date         
+            description: "The date on which order was placed"
+
+          - name: status           
+            description: "status of the order"
+
+          - name: orderid            
+            description: "id assigned to each order"
+
+          - name: paymentmethod      
+            description: "payment method used to place the order"
+
+          - name: amount             
+            description: "The total amount of the order"
+
+          - name: created            
+            description: "Create date for the record"
+            
+
+                
+                

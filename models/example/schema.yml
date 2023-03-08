@@ -44,7 +44,7 @@ models:
           - name: order_date         
             description: "The date on which order was placed"
 
-          - name: b.status           
+          - name: status           
             description: "status of the order"
 
           - name: orderid            
@@ -58,6 +58,7 @@ models:
 
           - name: created            
             description: "Create date for the record"
+            
 
                 
                 

@@ -1,22 +1,22 @@
-{{ config(materialized='table') }}
+-- {{ config(materialized='table') }}
 SELECT
   a.id AS id,
   first_name,
   last_name,
   user_id,
   order_date,
-  b.status,
+  b.status as status,
   orderid,
   paymentmethod,
   amount,
-  created
+  current_timestamp() AS created
 FROM
   `dbt-tutorial.jaffle_shop.customers` a
-JOIN
+LEFT JOIN
   `dbt-tutorial.jaffle_shop.orders` b
 ON
   a.id = b.id
-JOIN
+LEFT JOIN
   `dbt-tutorial.stripe.payment` c
 ON
-  b.id = c.id;
+  b.id = c.id

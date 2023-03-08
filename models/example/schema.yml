@@ -56,7 +56,7 @@ models:
           - name: amount             
             description: "The total amount of the order"
 
-          - name: created            
+          - name: create_ts            
             description: "Create date for the record"
             
 

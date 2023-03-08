@@ -27,3 +27,4 @@ from source_data
 */
 
 -- where id is not null
+-- where name is not null

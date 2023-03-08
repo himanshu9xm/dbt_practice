@@ -11,9 +11,11 @@
 
 with source_data as (
 
-    select 1 as id
+    select 1 as id,
+        "test" as nm
     union all
-    select "test" as id
+    select 2 as id,
+        "developer" as nm
 
 )
 
